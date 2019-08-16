@@ -1,0 +1,107 @@
+/* Products Page */
+
+h1, h2 {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+hr {
+    margin: 1rem 2rem;
+}
+
+article {
+    line-height: 30px;
+}
+
+article img {
+    width: 100%;
+    border-radius: 1%;
+}
+
+.resize-height {
+    height: 375px;
+}
+
+article p {
+    margin: 1rem 10%;
+    text-align: justify;
+}
+
+figcaption {
+text-align: center;
+font-size: 1rem;
+margin: 0.5rem;
+}
+
+
+div {
+    position: relative;
+}
+
+/*.small-left {*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    left: 20px;*/
+/*}*/
+
+/*.small-right {*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    right: 20px;*/
+/*}*/
+
+
+
+
+/* media */
+
+@media screen and (min-width: 730px)
+{
+    article img {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    article p {
+        margin: 1rem 5%;
+        text-align: justify;
+    }
+
+    .img-float-right {
+    float: right;
+    margin: 0 4rem 2rem 2rem;
+    }
+
+    .img-float-left {
+    float: left;
+    margin: 0 2rem 2rem 4rem;
+    }
+
+}
+
+@media screen and (min-width: 1024px)
+{
+    article img {
+        width: 25%;
+        margin: 0 auto;
+    }
+
+    article {
+        padding-bottom: 3rem;
+    }
+
+    article p:first-of-type {
+        margin: 5% 5% 2rem;
+        text-align: justify;
+    }
+
+    article p {
+        font-size: 2rem;
+    }
+
+    .resize-height {
+        height: 470px;
+    }
+
+}
+

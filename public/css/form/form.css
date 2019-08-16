@@ -1,0 +1,250 @@
+* {
+    outline: none;
+}
+
+body {
+    background-image: url('../../images/firstHerbe.png');
+    background-position: right bottom;
+    background-size: 100rem;
+    background-repeat: no-repeat;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ffffff;
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #ffffff;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #ffffff;
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #00ACC4 inset;
+    transition: background-color 1000s ease-in-out 0s;
+}
+
+.errorMessage {
+    text-align: center;
+}
+
+/* reset button style */
+
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-appearance: button; /* for input */
+    -webkit-user-select: none; /* for button */
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+
+.inevitably {
+    color: chocolate;
+}
+
+h1 {
+    text-align: center;
+}
+
+.select {
+    text-align: center; 
+}
+
+select {
+    color: #ffffff;
+    padding: .5rem 5rem;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 20px;
+    background-color: #00ACC4;
+}
+
+select:focus {
+    background-color: #024153;
+}
+
+form {
+    margin: 2rem 5% 4rem;
+    text-align: center;
+}
+
+.formDesign {
+    position: relative;
+    display: flex;
+    text-align: left;
+    background-color: #78C9D5;
+    width: 100%;
+    height: 3rem;
+    margin: 3rem 0;
+    -webkit-box-shadow: 7px 5px 10px -1px rgba(49,126,140,1);
+    -moz-box-shadow: 7px 5px 10px -1px rgba(49,126,140,1);
+    box-shadow: 7px 5px 10px -1px rgba(49,126,140,1);
+}
+
+.formDesign:nth-child(2n+1) {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.formDesign:nth-child(2n+2) {
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+form input:focus, textarea:focus {
+    background-color: rgb(42, 126, 139);
+    border-radius: 2px; 
+}
+
+form label {
+    position: absolute;
+    left: 1rem;
+    top: .6rem;
+    color: #ffffff;
+}
+
+form input {
+    border: none;
+    background: none;
+    color: #ffffff;
+    width: 100%;
+    padding-left: 40%; 
+    padding-right: 5%;
+}
+
+.selectSujet {
+    display: flex;
+    flex-direction: column;
+}
+
+.selectSujet select {
+    width: 15rem;
+    padding: .3rem 2rem;
+    margin: 2rem auto;
+    background-color: #78C9D5;
+}
+
+.selectSujet select:focus {
+    background-color: rgb(42, 126, 139);
+}
+
+.textarea {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 15rem;
+    padding-left: 40%;
+}
+
+textarea {
+    background-color: rgba(130, 200, 211, 0.707);
+    border: none;
+    color: #ffffff;
+    border-top-right-radius: 10px;
+    width: 100%;
+}
+
+
+.checkCondition {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.checkCondition small:first-of-type {
+    font-weight: bold;
+}
+
+.button {
+    margin: 2.5rem 0;
+}
+
+.button button:first-child {
+    background-color: #78C9D5;
+    border-top-left-radius: 20px;
+    margin-right: 0px;
+}
+
+.button button:last-child {
+    background-color: #FF5B4D;
+    border-bottom-right-radius: 20px;
+    margin-left: -5px;
+}
+
+.button button{
+    color: #ffffff;
+    padding: 1rem 2rem;
+    margin: -5px;
+}
+
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+    height: 20px;
+}
+
+
+/* Confirmation page */
+
+.confirmationPage {
+    margin: 10% 15%;
+}
+
+/* media */
+
+@media screen and (min-width: 730px)
+{
+
+    form {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    form input {
+        padding-left: 25%; 
+        padding-right: 5%;
+    }
+
+    .textarea {
+        padding-left: 25%;
+    }
+}
+
+@media screen and (min-width: 1024px)
+{
+    form {
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+
+    form input {
+        padding-left: 30%; 
+        padding-right: 5%;
+    }
+
+    .textarea {
+        padding-left: 30%;
+    }
+
+    .checkCondition {
+        max-width: 500px;
+    }
+}

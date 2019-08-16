@@ -1,0 +1,36 @@
+h2, h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.mention {
+    text-align: justify;
+    margin: 3rem 5%;
+}
+
+.mention p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 1024px)
+{
+
+    h2 {
+        text-align: center;
+    }
+
+    h3 {
+        text-align: left;
+    }
+    
+    .mention {
+        text-align: justify;
+        margin: 3rem 15%;
+    }
+    
+    .mention p {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+}
